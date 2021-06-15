@@ -60,4 +60,25 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>web</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.file>src/test/java/resources/webAppTestSuite.xml</suite.file>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>native</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <suite.file>src/test/java/resources/nativeAppTestSuite.xml</suite.file>
+            </properties>
+        </profile>
+    </profiles>
 </project>

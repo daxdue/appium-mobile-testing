@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Native App Test Suite">
+    <parameter name="appType" value="native"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="VCLNFC041811060"/>
+    <parameter name="app" value="./src/main/resources/EPAMTestApp.apk"/>
+
+    <test name="EPAM App Signin Test">
+        <packages>
+            <package name="ru.training.at.appium.nativeapp"/>
+        </packages>
+    </test>
+</suite>

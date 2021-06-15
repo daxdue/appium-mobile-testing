@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Web Application Test Suite">
+    <parameter name="appType" value="web"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="VCLNFC041811060"/>
+    <parameter name="browserName" value="Chrome"/>
+    <test name="Yandex search test">
+        <packages>
+            <package name="ru.training.at.appium.webapp"/>
+        </packages>
+    </test>
+</suite>

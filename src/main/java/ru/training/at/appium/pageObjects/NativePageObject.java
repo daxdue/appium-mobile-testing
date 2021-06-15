@@ -6,21 +6,42 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-public class NativePageObject {
+public class NativePageObject extends PageObject {
 
-    @AndroidFindBy(id = "platkovsky.alexey.epamtestapp:id/login_email")
+    private static final String BASE_PACKAGE = "platkovsky.alexey.epamtestapp";
+
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/login_email")
     WebElement loginEmailInput;
 
-    @AndroidFindBy(id = "platkovsky.alexey.epamtestapp:id/login_pwd")
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/login_pwd")
     WebElement passwordInput;
 
-    @AndroidFindBy(id = "platkovsky.alexey.epamtestapp:id/email_sign_in_button")
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/email_sign_in_button")
     WebElement signInButton;
 
-    @AndroidFindBy(id = "platkovsky.alexey.epamtestapp:id/register_button")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='BudgetActivity']")
+    WebElement activityName;
+
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/register_button")
     WebElement registerButton;
+
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/registration_email")
+    WebElement registerEmailInput;
+
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/registration_username")
+    WebElement registerUsernameInput;
+
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/registration_password")
+    WebElement registerPasswordInput;
+
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/registration_confirm_password")
+    WebElement registerConfirmPasswordInput;
+
+    @AndroidFindBy(id = BASE_PACKAGE + ":id/register_new_account_button")
+    WebElement registerNewAccountButton;
 
     public NativePageObject(AppiumDriver appiumDriver) {
         PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
     }
+
 }
