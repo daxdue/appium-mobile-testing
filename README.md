@@ -8,7 +8,7 @@ Each homework located in their own branch:
 * ***appium_base*** - branch for the first appium homework
 * ***appium_cloud*** - branch for the second appium homework
 
-###To run homework appium_base:
+**To run homework appium_base:**
 * Clone the repository to your local file system by executing ***git clone*** command:
     ```
     git clone https://github.com/daxdue/appium-mobile-testing
