@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cloud Web iOS Test Suite">
+    <parameter name="appType" value="web"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="browserName" value="Safari"/>
+    <parameter name="udid" value="00008101-000611D60C04001E"/>
+
+    <test name="Cloud web iOS testing">
+        <packages>
+            <package name="ru.training.at.appium.webapp"/>
+        </packages>
+    </test>
+</suite>
