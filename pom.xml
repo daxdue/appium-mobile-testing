@@ -15,7 +15,8 @@
         <testng.version>7.1.0</testng.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <suite.file></suite.file>
-        <mobilecloud.token>eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMR0xsSnVPQmxyUHF3Wi1JaTQ1VG1KQnVfakdVNnRLV3hKdm1JQ0w3cDU4In0.eyJleHAiOjE2MjY0NTY2OTgsImlhdCI6MTYyMzg2NDY5OCwianRpIjoiN2Q1MTMwYzktMzkxYi00MjQxLWIzZTgtNjEwZjBjN2JjNWIzIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5lcG0tdHN0Zi5wcm9qZWN0cy5lcGFtLmNvbS9hdXRoL3JlYWxtcy9wcm9kdWN0aW9uIiwiYXVkIjoibW9iaWxlY2xvdWQiLCJzdWIiOiJiNzEyYzEwNy0wNTYzLTRlYWEtOWQzYy0yM2M4Y2ZlNjJmZTYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtb2JpbGVjbG91ZCIsInNlc3Npb25fc3RhdGUiOiIwMTM5MDgwZS0xOWIxLTQwMTEtYmI3ZC0zYWU0OGFiMDNlY2EiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNsb3VkX3VzZXIiLCJvZmZsaW5lX2FjY2VzcyJdfSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBvZmZsaW5lX2FjY2VzcyBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJncm91cF9pZCI6IjE4YTVmZmU2LThkODEtNDBhOC04NDFmLWNkMzc0OTZlODIzMSIsIm5hbWUiOiJTZXJnZWkgS29jaGV0a292IiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VyZ2VpX2tvY2hldGtvdkBlcGFtLmNvbSIsImdpdmVuX25hbWUiOiJTZXJnZWkiLCJmYW1pbHlfbmFtZSI6IktvY2hldGtvdiIsImVtYWlsIjoic2VyZ2VpX2tvY2hldGtvdkBlcGFtLmNvbSJ9.OPBxXNSmOFUDNnCROZbB0yUeV93rZm-GWocdMUtIjmBB-sZ7wPPWzepC-tn7xzBcsnte1M4c9BUt2dJh0V46oQk74we4nMgPlN_UxBji7xve2LYXGIp-1dFdpzwW0XCTU8COH2L2bg6nMLLzvg2EiC6lybX0cMqSpd3LYH5k1KmhveGl9B0rsMOHmrfwwQq6gedy3ixDE2o-WI-f86WNR_iThYxDsTJPsWWHWg70Tt3hH9xckqDt5U-5ceOvpS0Ni_ljZWIaTH0aTWkhflcyfV9xCM9JnnsX1J8vVdQwM1JU1MjoyImB23nMcckwLiDwO5Bt7qrQmiUuIgRn0Nxmvg</mobilecloud.token>
+        <!--<token>eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMR0xsSnVPQmxyUHF3Wi1JaTQ1VG1KQnVfakdVNnRLV3hKdm1JQ0w3cDU4In0.eyJleHAiOjE2MjY0NTY2OTgsImlhdCI6MTYyMzg2NDY5OCwianRpIjoiN2Q1MTMwYzktMzkxYi00MjQxLWIzZTgtNjEwZjBjN2JjNWIzIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5lcG0tdHN0Zi5wcm9qZWN0cy5lcGFtLmNvbS9hdXRoL3JlYWxtcy9wcm9kdWN0aW9uIiwiYXVkIjoibW9iaWxlY2xvdWQiLCJzdWIiOiJiNzEyYzEwNy0wNTYzLTRlYWEtOWQzYy0yM2M4Y2ZlNjJmZTYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtb2JpbGVjbG91ZCIsInNlc3Npb25fc3RhdGUiOiIwMTM5MDgwZS0xOWIxLTQwMTEtYmI3ZC0zYWU0OGFiMDNlY2EiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNsb3VkX3VzZXIiLCJvZmZsaW5lX2FjY2VzcyJdfSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBvZmZsaW5lX2FjY2VzcyBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJncm91cF9pZCI6IjE4YTVmZmU2LThkODEtNDBhOC04NDFmLWNkMzc0OTZlODIzMSIsIm5hbWUiOiJTZXJnZWkgS29jaGV0a292IiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VyZ2VpX2tvY2hldGtvdkBlcGFtLmNvbSIsImdpdmVuX25hbWUiOiJTZXJnZWkiLCJmYW1pbHlfbmFtZSI6IktvY2hldGtvdiIsImVtYWlsIjoic2VyZ2VpX2tvY2hldGtvdkBlcGFtLmNvbSJ9.OPBxXNSmOFUDNnCROZbB0yUeV93rZm-GWocdMUtIjmBB-sZ7wPPWzepC-tn7xzBcsnte1M4c9BUt2dJh0V46oQk74we4nMgPlN_UxBji7xve2LYXGIp-1dFdpzwW0XCTU8COH2L2bg6nMLLzvg2EiC6lybX0cMqSpd3LYH5k1KmhveGl9B0rsMOHmrfwwQq6gedy3ixDE2o-WI-f86WNR_iThYxDsTJPsWWHWg70Tt3hH9xckqDt5U-5ceOvpS0Ni_ljZWIaTH0aTWkhflcyfV9xCM9JnnsX1J8vVdQwM1JU1MjoyImB23nMcckwLiDwO5Bt7qrQmiUuIgRn0Nxmvg</token>-->
+        <token></token>
         <!--<maven-surefire-plugin.ts.appium>http://localhost:4723/wd/hub</maven-surefire-plugin.ts.appium>-->
         <maven-compiler-plugin.source>1.8</maven-compiler-plugin.source>
         <maven-compiler-plugin.target>1.8</maven-compiler-plugin.target>
@@ -47,7 +48,7 @@
                         <suiteXmlFile>${suite.file}</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemPropertyVariables>
-                        <ts.appium>https://EPM-TSTF:${mobilecloud.token}@mobilecloud.epam.com/wd/hub</ts.appium>
+                        <ts.appium>https://EPM-TSTF:${token}@mobilecloud.epam.com/wd/hub</ts.appium>
                         <!--<ts.appium>${maven-surefire-plugin.ts.appium}</ts.appium>-->
                     </systemPropertyVariables>
                 </configuration>

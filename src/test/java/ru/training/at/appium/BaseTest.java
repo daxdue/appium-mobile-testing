@@ -87,6 +87,7 @@ public class BaseTest {
                 break;
             case WEB:
                 desiredCapabilities.setCapability(BROWSER_NAME, browserName);
+                desiredCapabilities.setCapability(CHROMEDRIVER_PROP,"true");
                 break;
         }
         try {
@@ -100,22 +101,14 @@ public class BaseTest {
     }
 
     public void swipeScreen(SwipeDirection dir) {
-        System.out.println("swipeScreen(): dir: '" + dir + "'"); // always log your actions
 
-        // Animation default time:
-        //  - Android: 300 ms
-        //  - iOS: 200 ms
-        // final value depends on your app and could be greater
-        final int ANIMATION_TIME = 200; // ms
+        final int ANIMATION_TIME = 200;
+        final int PRESS_TIME = 200;
 
-        final int PRESS_TIME = 200; // ms
-
-        int edgeBorder = 10; // better avoid edges
+        int edgeBorder = 10;
         PointOption pointOptionStart, pointOptionEnd;
-
         // init screen variables
         Dimension dims = appiumDriver.manage().window().getSize();
-
         // init start point = center of screen
         pointOptionStart = PointOption.point(dims.width / 2, dims.height / 2);
 
@@ -135,7 +128,6 @@ public class BaseTest {
             default:
                 throw new IllegalArgumentException("swipeScreen(): dir: '" + dir + "' NOT supported");
         }
-
         // execute swipe using TouchAction
         try {
             new TouchAction(appiumDriver)

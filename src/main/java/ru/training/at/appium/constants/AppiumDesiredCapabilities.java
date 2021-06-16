@@ -10,4 +10,5 @@ public final class AppiumDesiredCapabilities {
     public static final String BUNDLEID_NAME = "bundleId";
     public static final String APP_ACTIVITY_NAME = "appActivity";
     public static final String APP_PACKAGE_NAME = "appPackage";
+    public static final String CHROMEDRIVER_PROP = "chromedriverDisableBuildCheck";
 }
