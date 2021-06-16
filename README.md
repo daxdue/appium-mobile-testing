@@ -28,7 +28,7 @@ Each homework located in their own branch:
     ```
   
 **To to run homework appium_cloud:**
-* If you already cloned the repository, checkout to *appium_cloud branch.
+* If you already cloned the repository, checkout to *appium_cloud branch*.
 * Choose required device in EPAM Mobile Cloud web-service and place his identifier to **deviceName** (if use Android) 
   or **udid** (if use iOS) in the required suite .xml file. 
 * Open ***Terminal / Command line*** and locate to project directory.
@@ -41,11 +41,11 @@ Each homework located in their own branch:
   ```
   mvn clean test -P cloudWebIos -Dtoken=$yourApiToken
   ```
-* To rum ***Android Native*** test execute:
+* To run ***Android Native*** test execute:
   ```
   mvn clean test -P cloudNativeAndroid -Dtoken=$yourApiToken
   ```
-* To rum ***iOS Native*** test execute:
+* To run ***iOS Native*** test execute:
   ```
   mvn clean test -P cloudNativeIos -Dtoken=$yourApiToken
   ```
