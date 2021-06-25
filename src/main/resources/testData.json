@@ -1,0 +1,10 @@
+[
+  {
+    "email": "test@test.ru",
+    "login": "test",
+    "password": "qzwxecasd123",
+    "passwordConfirmation": "qzwxecasd123",
+    "activityName": "Budget",
+    "wordToSearch": "EPAM"
+  }
+]
