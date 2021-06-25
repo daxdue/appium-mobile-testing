@@ -4,27 +4,28 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.training.at.appium.BaseTest;
 import ru.training.at.appium.constants.DataProviders;
+import ru.training.at.appium.models.TestObject;
 import ru.training.at.appium.testdata.TestDataProvider;
 
 public class NativeAppTests extends BaseTest {
 
-    @Test(dataProvider = DataProviders.ACCOUNT_DATA, dataProviderClass = TestDataProvider.class)
-    public void signinAppTest(String testEmail, String testLogin, String testPassword) {
+    @Test(dataProvider = DataProviders.TEST_DATA, dataProviderClass = TestDataProvider.class)
+    public void signinAppTest(TestObject testObject) {
         try {
             //Open account registration screen
             pageObject.getPageElement("registerButton").click();
             //Input email for new account
             pageObject.getPageElement("registerEmailInput")
-                    .sendKeys(testEmail);
+                    .sendKeys(testObject.getEmail());
             //Input username for new account
             pageObject.getPageElement("registerUsernameInput")
-                    .sendKeys(testLogin);
+                    .sendKeys(testObject.getLogin());
             //Input password for new account
             pageObject.getPageElement("registerPasswordInput")
-                    .sendKeys(testPassword);
+                    .sendKeys(testObject.getPassword());
             //Confirm password
             pageObject.getPageElement("registerConfirmPasswordInput")
-                    .sendKeys(testPassword);
+                    .sendKeys(testObject.getPasswordConfirmation());
             //Hide keyboard
             appiumDriver.hideKeyboard();
             //Register new account
@@ -32,10 +33,10 @@ public class NativeAppTests extends BaseTest {
                     .click();
             //Input account email
             pageObject.getPageElement("loginEmailInput")
-                    .sendKeys(testEmail);
+                    .sendKeys(testObject.getEmail());
             //Input account password
             pageObject.getPageElement("passwordInput")
-                    .sendKeys(testPassword);
+                    .sendKeys(testObject.getPassword());
             //Perform login
             pageObject.getPageElement("signInButton")
                     .click();

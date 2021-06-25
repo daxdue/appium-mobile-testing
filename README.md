@@ -15,6 +15,7 @@ Each homework located in their own branch:
     ```
 * Run Appium on your local machine. If you haven't Appium, please install it.
 * Open the project in IntelliJIDEA
+* Checkout to appium_base branch
 * Open ***test/java/resources/nativeAppTestSuite.xml*** and change value for property ***deviceName*** to your target device
 * Open ***Terminal / Command line*** and locate to project directory
 * To run ***Web*** test execute command:
